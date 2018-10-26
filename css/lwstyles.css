@@ -1,0 +1,639 @@
+/* Last Edit: 21.06.2018, Emanuel Harms */
+
+/*KTBL Farben in Homepage in Variablen*/
+:root {
+  --A_TVN: #A4160F;
+  --schrift:#5c5c5c;
+  --schrift-blau: #6979a7;
+  --umrisse-grau:#ccc;    /* Umrisse für hr und border */
+  --linkbg-gruen: #E6F8E0;
+  --blau-hell3: #B9D5F2;  /* Hover-Hintergründe */
+  --leichtgrau: #F2F2F2;
+  --basisschriftgroesse: 1rem;
+  --einruecken: 50px;
+}
+/* Beispiel für Variablenaufruf :
+h1 {
+  color: var(--linkbg-gruen);
+}
+*/
+
+/*Fonts	===============================================================*/
+@charset "UTF-8";
+@font-face {
+  font-family: 'open_sansextrabold';
+  src: url("../styleguide/fonts/opensans-extrabold-webfont.eot");
+  src: url("../styleguide/fonts/opensans-extrabold-webfont.eot?#iefix") format("embedded-opentype"), url("../styleguide/fonts/opensans-extrabold-webfont.woff2") format("woff2"), url("../styleguide/fonts/opensans-extrabold-webfont.woff") format("woff"), url("../styleguide/fonts/opensans-extrabold-webfont.ttf") format("truetype"), url("../styleguide/fonts/opensans-extrabold-webfont.svg#open_sansextrabold") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'open_sansbold';
+  src: url("../styleguide/fonts/opensans-bold-webfont.eot");
+  src: url("../styleguide/fonts/opensans-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../styleguide/fonts/opensans-bold-webfont.woff2") format("woff2"), url("../styleguide/fonts/opensans-bold-webfont.woff") format("woff"), url("../styleguide/fonts/opensans-bold-webfont.ttf") format("truetype"), url("../styleguide/fonts/opensans-bold-webfont.svg#open_sansbold") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'open_sanslight';
+  src: url("../styleguide/fonts/opensans-light-webfont.eot");
+  src: url("../styleguide/fonts/opensans-light-webfont.eot?#iefix") format("embedded-opentype"), url("../styleguide/fonts/opensans-light-webfont.woff2") format("woff2"), url("../styleguide/fonts/opensans-light-webfont.woff") format("woff"), url("../styleguide/fonts/opensans-light-webfont.ttf") format("truetype"), url("../styleguide/fonts/opensans-light-webfont.svg#open_sanslight") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'open_sansitalic';
+  src: url("../styleguide/fonts/opensans-italic-webfont.eot");
+  src: url("../styleguide/fonts/opensans-italic-webfont.eot?#iefix") format("embedded-opentype"), url("../styleguide/fonts/opensans-italic-webfont.woff2") format("woff2"), url("../styleguide/fonts/opensans-italic-webfont.woff") format("woff"), url("../styleguide/fonts/opensans-italic-webfont.ttf") format("truetype"), url("../styleguide/fonts/opensans-italic-webfont.svg#open_sansitalic") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'open_sansregular';
+  src: url("../styleguide/fonts/opensans-regular-webfont.eot");
+  src: url("../styleguide/fonts/opensans-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../styleguide/fonts/opensans-regular-webfont.woff2") format("woff2"), url("../styleguide/fonts/opensans-regular-webfont.woff") format("woff"), url("../styleguide/fonts/opensans-regular-webfont.ttf") format("truetype"), url("../styleguide/fonts/opensans-regular-webfont.svg#open_sansregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'open_sanslight_italic';
+  src: url("../styleguide/fonts/opensans-lightitalic-webfont.eot");
+  src: url("../styleguide/fonts/opensans-lightitalic-webfont.eot?#iefix") format("embedded-opentype"), url("../styleguide/fonts/opensans-lightitalic-webfont.woff2") format("woff2"), url("../styleguide/fonts/opensans-lightitalic-webfont.woff") format("woff"), url("../styleguide/fonts/opensans-lightitalic-webfont.ttf") format("truetype"), url("../styleguide/fonts/opensans-lightitalic-webfont.svg#open_sanslight_italic") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+  @font-face {
+    /*"Font Awesome 5 Free" ist über <link> verfügbar
+    Für far font-weight:400;
+    Für fas font-weight:900;
+    benutzen
+    */
+  }
+
+/*Fonts ENDE ===========================================================*/
+
+/*Hintergrundbilder der einzelnen Seiten ===================================================*/
+.bg-img {  
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.bg-greenhousemodern {
+  background-image: url("../img/greenhousemodern.jpg");
+}
+.bg-lwbauen {
+  background-image: url("../img/richtfest.jpg"); 
+}
+.bg-projekt {
+  background-image: url("../img/richtfest.jpg"); 
+}
+.bg-standort {
+  background-image: url("../img/richtfest.jpg");  
+}
+.bg-antragsverfahren {
+  background-image: url("../img/richtfest.jpg");  
+}
+.bg-foerderung {
+  background-image: url("../img/richtfest.jpg");  
+}
+.bg-ansprechpartner {
+  background-image: url("../img/richtfest.jpg");  
+}
+
+/*ENDE Hintergrundbilder der einzelnen Seiten ===================================================*/
+
+
+/* Allgemeine Klassen ===================================================*/
+
+html, body {
+  height: 100%;
+  font-family: 'open_sansregular', sans-serif;
+  color: var(--schrift);
+}
+
+h1 {
+  font-size: 2.5rem; /*22px*/
+  margin-top:0;
+  margin-bottom: 1rem;
+}
+
+.outerBox h1 {      /*verbunden mit .innerBox padding*/
+    margin-left: var(--einruecken);
+}
+
+h2 {
+  font-size: 1.8rem; /*18px*/  
+  margin-bottom: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;   /*E: 16px */
+  //margin-top: 1.8rem;
+  margin-bottom: 0.8rem;  /*E: "" */
+}
+
+.h3ueber {
+  font-size: 1.5rem;   /*E: 16px */
+  margin-bottom: 0.3rem;  /*E: "" */
+}
+
+h3 .h3unter {
+  font-size: 1rem;   /*E: 16px */  
+  margin-bottom: 0.3rem;  /*E: "" */
+}
+
+.h4ueber{
+  font-size: 1.5rem;   /*E: 16px */  
+  margin-bottom: 0.3rem;  /*E: "" */
+}
+.h4ueber .hunter {
+  font-size: 1rem;   /*E: 16px */  
+  margin-bottom: 0.3rem;  /*E: "" */
+}
+
+h4 {
+  font-size: 1.3em;
+  margin-top:2em;  
+}
+
+.margintop1em {
+  margin-top:1em;
+}
+.margintop2em {
+  margin-top:2em;
+}
+
+.marginbottom2em{
+  margin-bottom:2em;
+}
+
+.zweispaltig { 
+  column-count: 2;
+  column-gap: 3em;
+  column-rule-color: var(--umrisse-grau);
+  column-rule-width: 1px;
+  column-rule-style: dotted;
+}
+
+.justify {  
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.img-25 {
+  width: 25% !important;
+}
+
+.width-25 {
+  width: 25% !important;
+}
+.width-50 {
+  width: 50% !important;
+}
+.width-75 {
+  width: 75% !important;
+}
+.width-100 {
+  width: 100% !important;
+}
+
+.block {
+  display: block;
+  margin: 2em;
+}
+
+.center  {
+    margin-right: auto;
+    margin-left: auto;   
+}
+
+.lightbox {}
+
+em {
+  font-style: normal;
+  font-weight: bolder;
+}
+
+.thumb-height {
+  height:10em;
+}
+
+.list-of-keywords {
+
+}
+
+.bg-light-green {
+    background-color: var(--linkbg-gruen);
+}
+.bg-blau-hell3 {
+    background-color: var(--blau-hell3);
+}
+
+/*ENDE Allgemeine Klassen ===================================================*/
+
+
+/*FontAwesome Überschreibungen ===================================================*/
+.fa-ul ul{
+  margin: 0 0 1em 0 !important;     /* Sorgt dafür, dass nestedt lists nicht zweimal eingerückt werden */
+  padding: 0px !important;
+}
+/*ENDE FontAwesome Überschreibungen ===================================================*/
+
+
+/*Teaser mit Header und Slider===================================================*/
+.slideteaser-header {
+  //height: 10rem;
+}
+  .slideteaser-header h3 {
+    margin: 0 0 0.8em 0;
+  }
+  .slideteaser-header img {
+    width:100%;
+    } .slideteaser-header:hover {
+      background-color:var(--blau-hell3);
+      cursor: pointer;
+    }
+
+.slideteaser-slider {
+  display: none;
+  margin-top: 1em;
+}
+/*ENDE Teaser mit Header und Slider===================================================*/
+
+
+/*Teaser als eine Zeile, kein Slider===================================================*/
+.rowteaser-header {
+  margin-bottom: 2em;
+}
+  .rowteaser-header h3 {
+    margin: 0 0 0.8em 0;
+  }
+  .rowteaser-header img {
+    width:100%;
+    } 
+  .rowteaser-header:hover {
+      background-color:var(--blau-hell3);
+      cursor: pointer;
+    }
+/* ENDE Teaser als eine Zeile, kein Slider===================================================*/
+
+
+/*Modal - Checkliste ===================================================*/
+.left-30 {
+  position: relative;
+  left:-30px;
+}
+/*Ende Modal - Checkliste ===================================================*/
+
+/*CARD- Checkliste ===================================================*/
+.checklist {   
+    width:75%;
+    margin: 2em auto 1.5em auto;
+  }
+  .checklist  .card-header {
+    background-color: var(--blau-hell3) !important; 
+    font-size: 1.2em !important;
+  }
+  .checklist  .card-body {
+    background-color: var(--leichtgrau) !important;    
+    }    
+    .checklist .card-body li {       
+      font-size: 0.9em;
+      line-height: 1.8em;
+    }
+  .checklist .left-30 {
+    position: relative;
+    left:-30px;
+  }
+/*Ende Checkliste ===================================================*/
+
+/*Example Cards ===================================================*/
+.example {
+    // font-family: "open_sansregular", sans-serif !important;
+    //font-size: 1.2em !important;
+    width:75%;
+    margin: 2em auto 1.5em auto;
+  }
+  .example  .card-header {
+    background-color: var(--blau-hell3) !important;
+    cursor: pointer;
+  }
+  .example  .card-body {
+    background-color: var(--leichtgrau) !important;
+    display: none;
+    }
+    .example  .card-body ul {
+      //list-style:none;
+      //margin-bottom: 1em;
+      //margin: 0px;
+      //padding: 0px;
+      //list-style-position: outside;
+    }
+    .example .card-body li {
+        color:var(--schrift);
+        font-family: "open_sanslight", sans-serif !important;
+        font-size: 1.3em;
+        line-height: 1.8em;
+        list-style-type: none;
+        padding-left: 1.2em;
+        text-indent: -2em;
+    }
+     .example .card-body li::before{
+        font-family: "Font Awesome 5 Free";
+        content: "\f35a";
+        font-weight: 900;
+        margin-right:1em;
+      } /* */
+  .example .left-30 {
+    position: relative;
+    left:-30px;
+  }
+  /*ENDE Example Cards ===================================================*/
+
+  
+/* Link Footer ===================================================*/
+  .linkfooter {
+    border-top: 1px dotted var(--umrisse-grau);    
+    }
+
+    .linkfooter div:first-child {
+      border-right: 1px dotted var(--umrisse-grau);
+      }
+    .linkfooter h2 {
+      font-family: inherit;
+      font-weight: normal;
+      text-transform: none;
+      margin-top:1em;
+      }
+    .linkfooter a {
+      /*text-decoration: none;*/
+      color: inherit;
+      font-weight: normal;
+      }
+    .linkfooter ul {      
+      margin-left: 0.5em;           /*Ausrichtung der Aufzählungspunkte*/
+      padding-left: 0.5em;          /*Ausrichtung der Aufzählungspunkte*/
+    }
+    .linkfooter li {
+      font-family: "open_sanslight";
+      margin-bottom: 0.6em;
+      //font-size: 1.2em;
+      }
+  /*Ende Link Footer ===================================================*/
+
+
+
+/*Bootstrap 4 Überschreibungen. ===================================================*/
+
+.container {
+  max-width: 960px !important;  /*Breite auf 960 px reduzieren */
+}
+
+abbr {
+  font-weight: bolder;
+}
+
+.dropdown-menu {
+  width: 150%;
+}
+
+.innerBox .blockquote {
+  line-height: normal;
+  font-size: 1.3em;
+  margin: 1.4em 5em 1.4em 5em;
+  border-top: 1px dotted var(--umrisse-grau);
+  border-bottom: 1px dotted var(--umrisse-grau);
+  font-variant: small-caps;
+  padding:1em;
+}
+
+/*Ende Bootstrap Überschreibungen. ===================================================*/
+
+
+/*bktools.html===================================================*/
+.tools-nav-cols-container {
+  width:95%;
+  border: 1px solid var(--umrisse-grau);
+  margin:0 auto;  
+  height:100%;
+  padding-bottom: 20px;
+      }
+      .tools-nav-cols-container h2 {
+        padding: 0.4vw;
+        margin-top: 1em;
+        margin-bottom: 1em;        
+        display: block;
+        min-height: 3em;
+        text-align: center;
+      }
+      .tools-nav-cols-container img {
+        width:80%;
+        display: block;
+        margin:0 auto;
+      }
+      .tools-nav-cols-container .nav-cols-icon{
+        font-size: 8em;
+        text-align: center;
+        display:block;
+        margin: 2vw auto;
+      }
+      .tools-nav-cols-container p {       
+        margin-top:1em;
+        padding: 0 0.4vw 0 0.4vw;
+      }
+      .tools-nav-cols-container:hover {
+        background-color: var(--blau-hell3);
+        cursor:pointer;
+      }
+/*Ende bktools.html ===================================================*/
+
+
+/*Startseite & Navigation LW-Bauen ===================================================*/
+
+/*Navigation, BT4 NavBar. Styleguide nachgebaut, nicht original verwendet */
+.bg-dark {
+  background-color: rgba(255, 255, 255, 0.8) !important;     /*E: Opacity geändert wegen hohem Kontrast in Bildern 0.6. Siehe auch .outerBox in styles.css */
+  height: auto;
+  margin-bottom: 20px;
+}
+.navbar {
+  padding: 0px;
+  line-height: 1.5;
+}
+
+/*09.05.2018 TEST Wegen BT4 Tabs versuche ich die nav-xxx innerhalb von .navbar-nav zu schachteln. Es ist nicht klar ob das überall */
+.navbar-nav .nav-item {
+  margin:0px 20px 0px 0px;
+  padding-right: 10px;  
+  font-size: 12px;
+  }
+  .navbar-nav .nav-item:first-child {
+    margin-left: -25px;
+  }
+  .navbar-nav .nav-item i {
+    padding-right:10px;
+    font-size: 14px;                          /*Hätte gerne 18-20*/
+  }
+  .navbar-nav .nav-item .nav-link {
+    //padding: 0px !important;
+  }
+  .navbar-nav .nav-item a {
+   padding: 5px 10px 2px 10px !important;
+   display: inline-block;
+   text-transform: uppercase;
+   color: var(--schrift); /*XXX 10.04.2018 */
+   font-size: 12px;                           /*Hätte gerne 14-18*/
+   border-bottom: 4px solid transparent;
+   border-radius: 0;
+   text-decoration: none;}                    /*E: BT4*/
+   .navbar-nav .nav-item a:hover {
+   background-color: transparent;
+   border-bottom: 4px solid #6979a7; }
+   .navbar-nav .nav-item a:focus {
+   background-color: transparent;
+   outline: none; }
+
+
+/*Säulencontainer mit Grids statt Float ===================================================*/
+.lw-nav-cols-container {
+  width:95%;
+  border: 1px solid var(--umrisse-grau);
+  margin:0 auto;
+  //min-height:390px;
+  height:100%;
+  padding-bottom: 20px;  
+}
+  .lw-nav-cols-container h2 {
+    padding:0.4vw;
+    margin-bottom: 2vw;
+  }
+  .lw-nav-cols-container img {
+    width:80%;
+    display:block;
+    margin:0 auto;
+  }
+  .lw-nav-cols-container .nav-cols-icon{
+    font-size: 8em;
+    text-align: center;
+    display:block;
+  }
+  .lw-nav-cols-container p {   
+    margin-top:2em;
+    padding: 0 0.4vw 0 0.4vw;
+  }
+  .lw-nav-cols-container:hover {
+    background-color: var(--blau-hell3);
+    cursor:pointer;
+  }
+/*Ende Navigationscontainer mit Grids statt Float ===================================================*/
+
+/* Ursprüngliche styles von Pixelgenau
+Styleguide ist hiermit abgelöst: 22.06.2018
+styleguide/css/styles.css ===================================================*/
+
+.content .outerBox {
+  margin: 0 -25px 25px;
+  padding: 25px;
+  background-color: rgba(255, 255, 255, 0.8); }         
+  /*E: Opacity Wert angepasst 0.8 wegen hohem Kontrast in Bildern. Siehe auch .navigation in lwstyles.css */
+
+  .content .outerBox .innerBox {
+    padding: 20px;
+    background-color: #fff;
+    margin-bottom: 25px; }
+
+    .content .outerBox .innerBox > .row {
+      margin-top: 15px;
+      margin-bottom: 15px; }
+    .content .outerBox .innerBox .row-same-height > div {
+      display: table-cell;
+      vertical-align: middle; }
+    .content .outerBox .innerBox p {
+      color: #5c5c5c;
+      font-size: 1em;   /*E: 18px */
+      line-height: 1.6em;  /*E: 34px */
+      font-family: "open_sanslight", Arial, sans-serif;
+      
+      -moz-hyphens: auto;
+      -o-hyphens: auto;
+      -webkit-hyphens: auto;
+      -ms-hyphens: auto;
+      hyphens: auto; 
+      }
+      .content .outerBox .innerBox p:last-child {
+        margin-bottom: 0; }
+      .content .outerBox .innerBox p.bodytext {
+        font-size: 15px;
+        line-height: 26px; }
+
+.header {
+  height: 94px;
+  background-color: #fff; }
+  .header .container {
+    padding: 0; }
+  .header .menu {
+    color: #5c5c5c;
+    font-size: 13px;
+    font-family: "open_sansbold", Arial, sans-serif;
+    text-transform: uppercase;
+    margin-top: 42px; }
+    .header .menu a {
+      color: #5c5c5c; }
+    .header .menu .iconBarWrapper {
+      display: inline-block; }
+      .header .menu .iconBarWrapper .icon-bar {
+        display: block;
+        width: 10px;
+        height: 2px;
+        border-radius: 1px;
+        background-color: #5c5c5c; }
+        .header .menu .iconBarWrapper .icon-bar + .icon-bar {
+          margin-top: 2px; }
+  .header .logo {
+    position: relative;   /*E: Statt margin*/
+    top: 28px;            /*E: Statt margin*/
+    //margin-top: 28px; } /*E:  Original. Funktioniert mit BT4 nicht */
+
+.content .printPage a {
+  background-image: url("../styleguide/images/sprite.png");
+  background-position: 0 -128px;
+  background-repeat: no-repeat;
+  padding-left: 25px;
+  font-size: 12px;
+  line-height: 18px;
+  color: #5c5c5c; }
+  
+.footer .container a {
+  font-size: 14px;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin: 0 10px; }
+  .footer .container .links a .first {
+    margin-left: 0; }
+
+/*Ende Styleguide===================================================*/
+
+
+
+
+/* Überschreibungen von TWT/Pixegenau-Styles aus Datei styleguide/css/styles.css ===================================================*/
+.outerBox {
+  //opacity:1 !important;
+}
+
+.innerBox {
+  padding:   var(--einruecken) !important; /*verbunden mit .outerBox h1 */
+}
+
+.innerBox a {
+  color: inherit;
+}
+
+hr {
+	border-top: 1px dotted #aaa !important;
+  margin-bottom: 2em;
+}
+
+/* ENDE Überschreibungen von TWT/Pixegenau-Styles aus Datei styleguide/css/styles.css ===================================================*/
+
+
+
+/* ENDE MODALs====================*/

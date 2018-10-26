@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="de">
+	<head>
+		<meta charset="utf-8" />
+	  	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="bootstrap/css/bootstrap.css" >
+
+		<style>
+			.row {
+				//border-bottom: 1px dotted gray;
+				//margin: 10px;
+			}
+			.headrow {
+				margin-bottom:20px;
+				//border: 1px solid black;
+			}
+			p {
+				background-color:#eee;
+			}
+			html {
+				font-family: 'Calibri', 'helvetica neue', helvetica, arial, sans-serif;
+				box-sizing: border-box;
+			}
+			body {
+				//width: 70%;
+				margin: 0 auto;
+				line-height: 2em;
+				font-size: 0.8em;
+			}			
+		
+			.invisible {
+				display:none;
+			}
+			select, input  {
+				width:100%;
+			}
+		</style>
+
+		<!--Daten derzeit Hardcoded -->
+		<script src="js/allghdata.js"></script>
+		<script src="js/baukost-gw-array.js"></script>
+		
+	</head>
+
+	<body>
+		<div class="container">
+			<h1 style="margin-top:50px;">Baukost Gewächshäuser</h1>
+		</div>
+
+		<div class="container">
+				<div class="row headrow">
+					<div class="col-2">						
+						<button id="neueZeileBtn" class="btn btn-danger" >Neue Komponente</button>	
+					</div>	
+					<div class="col-10">
+						
+					</div>						
+				</div>				
+		</div><!-- ENDE Container-->
+		
+
+		<div id="datenreihen" class="container">
+			<div id="row" class="row">
+				<div class="col-3">
+					Komponente wählen
+				</div>
+				<div class="col-2">
+					Größenklasse
+				</div>
+				<div class="col-4">
+					Option
+				</div>
+				<div class="col-1">
+					Wert
+				</div>
+				<div class="col-1">
+					Menge
+				</div>
+				<div class="col-1">
+					Summe
+				</div>
+			</div>			
+		
+			
+		</div><!-- ENDE Container-->	
+		
+		<div class="container">
+			<div class="row">
+				<div id="fehlernachricht" class="col-10">					
+				</div>
+					
+				<div class="col-2">
+					<label for="giveWert">Gesamt:</label><br />
+					<p id="ergebnis">Default</p>
+				</div>
+			</div>
+		</div><!-- ENDE Container-->	
+
+
+		<script src="js/baukotzjsobjects2.js"></script>
+
+	</body>
+</html>

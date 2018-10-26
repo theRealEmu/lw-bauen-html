@@ -1,0 +1,41 @@
+/* Last Edit: 15.02.2018, Emanuel Harms */
+
+/*KTBL Farben in Homepage
+Blau	#6979a7
+
+*/
+
+
+/**Fonts	====================================================================================================**/
+
+
+/**Styles für LW-Bauen**/
+.homebackground {
+  background-image: url("../img/zungenkuss.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.lw-nav-container {
+  width:26.67%;
+  float:left;
+  margin-left: 5%;
+  border: 1px solid gray;
+  }
+    .lw-nav-container h2 {
+      padding:0.2vw;
+    }
+    .lw-nav-container img {
+      width:80%;
+      display:block;
+      margin:0 auto;
+    }
+    .lw-nav-container p {
+      margin-top:1vw;
+      padding: 0 0.2vw 0 0.2vw;
+    }
+
+hr {
+	size: 1px;
+	border-color:#666;
+}

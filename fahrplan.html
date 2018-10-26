@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+	<html lang="de">
+	<head>
+	  <meta charset="utf-8">
+	  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	  <meta name="viewport" content="width=device-width, initial-scale=1 shrink-to-fit=no">
+	  <title>LW-Bauen - Fahrplan</title>
+
+		<!--FavIcon -->
+		<link rel="shortcut icon" href="img/ktblfavicon.ico" type="image/x-icon">
+
+		<!-- Bootstrap CSS in aktueller Version (Feb/2018)-->
+		<!--link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.css"-->
+		<link rel="stylesheet" href="css/bootstrap4.0.0.css">
+		<!-- ENDE Bootstrap CSS in aktueller Version (Feb/2018)-->
+
+	  <!--Styleguide Pixelgenau / TWT 2012 -->
+	  
+		<!--ENDE Styleguide Pixelgenau / TWT 2012 -->
+
+		<!-- FontAwesome -->
+		<!--link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet"-->
+		<link href="fontawesome/css/fontawesome-all.css" rel="stylesheet">
+
+		<!-- Custom LW-Bauen Stylesheet -->
+		<link href="css/lwstyles.css" rel="stylesheet" media="all"/>
+
+		<!-- Eigene Skripte -->
+		<script src="js/lwfunctions.js"></script>
+		<!-- ENDE Eigene Skripte -->
+	</head>
+
+  <body class="bg-img bg-lwbauen" cz-shortcut-listen="true" >
+
+		<!--Header -->
+    <header class="header">
+      <div class="container">
+				<!-- KTBL-Logo -->
+        <div class="pull-right text-right logo">
+            <img src="styleguide/images/logo-ktbl.png" alt="KTBL-Logo" class="img-responsive" width="145">
+        </div>
+      </div>
+  	</header>
+		<!-- Header Ende -->
+
+		<!-- Navigation Insert per Jscript-->
+		<nav id ="nav" class="navbar navbar-expand-md bg-dark navbar-light"></nav>
+		<script>insertNav();</script>
+		<!--ENDE Navigation -->
+
+		<!-- Content -->
+    <div class="content">
+      <div class="container">
+
+				<div class="outerBox">
+					<h1>Fahrplan zur Baugenehmigung</h1>
+					<div class="innerBox">
+						<h2>Die wichtigsten Schritte auf dem Weg zum neuen Stall</h2>
+            <p>
+
+            </p>
+            <p>
+              <a data-fancybox data-caption="Flussdiagramm von Antragstellung bis Genehmigung" href="img/fahrplan.png">
+                <img class="block center img-25 img-thumbnail" src="img/fahrplan.png" alt="Flussdiagramm von Antragstellung bis Genehmigung" />
+              </a>
+						</p>
+					</div>
+
+          <!--innerBox Checkliste-->
+					<div class="innerBox">
+						<h2 id="hcheckliste">Checkliste und weitere Informationen</h2>
+
+						<!-- Linkfooter ===================================-->
+						 <div class="row linkfooter">
+							 <div class="col-md">
+								 <h2>KTBL: weitere Infos</h2>
+								 <ul>
+									 <li><a href="http://daten.ktbl.de/downloads/nbr/NBR_Recht.pdf">Rechtliche Rahmenbedingungen für die Bewertung von Tierhaltungsverfahren</a></li>
+									 <li><a href="https://www.ktbl.de/shop/produktkatalog/show/Product/11446/">Shop: Nationaler Bewertungsrahmen Tierhaltungsverfahren</a></li>
+								 </ul>
+							 </div>
+							 <div class="col-md">
+								 <h2>Externe Links</h2>
+								 <ul>
+									 <li><a href="https://www.gesetze-im-internet.de/bbaug/" target="_blank">Baugesetzbuch</a></li>
+									 <li><a href="http://www.bauordnungen.de/html/deutschland.html" target="_blank">Bauordnungen der Länder</a></li>
+									 <li><a href="http://www.bmub.bund.de/themen/bauen/bauwesen/bauauftragsvergabe/vergabe-und-vertragsordnung-vob/" target="_blank">VOB 2016</a></li>
+								 </ul>
+								 </ul>
+							 </div>
+						 </div>
+					 	<!--Ende Linkfooter ===================================-->
+
+					</div>
+					<!--Ende innerBox -->
+				</div>
+				<!--Ende outerBox-->
+			</div>
+			<!--Ende Container-->
+		</div>
+		<!--Ende Content -->
+
+		<!--Seite drucken per JScript einfügen-->
+		<script>insertPrint();</script>
+		<!--Seite Drucken Ende-->
+
+		<!-- Footer per JScript einfügen-->
+		<footer id="pageFooter" class="footer"></footer>
+		<script>insertFooter();</script>
+		<!-- Footer Ende -->
+
+
+    <!-- Aktuelles jQuery und Bootstrap JS (Feb/2018) -->
+		<!--script src="https://code.jquery.com/jquery-3.2.1.min.js"></script-->
+		<script src="js/jquery-3.3.1.js"></script>
+		<!--script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script-->
+		<script src="js/popper.min.js"></script>
+		<!--script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script-->
+		<script src="js/bootstrap.min.js"></script>
+		<!-- ENDE aktuelles jQuery und Bootstrap JS (Feb/2018) -->
+
+
+		<!--Add latestfancyBox files -->
+		<!--link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" /-->
+		<link rel="stylesheet" href="fancybox/jquery.fancybox.min.css" />
+		<!--script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js"></script-->
+		<script src="fancybox/jquery.fancybox.min.js"></script>
+
+		<!-- Eigene Skripte -->
+		<script src="js/main.js"></script>
+		<!-- ENDE Eigene Skripte -->
+
+	</body>
+</html>
